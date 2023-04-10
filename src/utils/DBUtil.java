@@ -1,23 +1,26 @@
 package utils;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Properties;
+
+import com.mysql.cj.callback.UsernameCallback;
 
 import utils.DBUtil;
-
 
 /**
  * @author 韩炳琪 冯宇 邸腾
  *
  */
 public class DBUtil {
-	private static final String USER = "root";
-	private static final String PWD = "root";
-	private static final String URL = "jdbc:mysql://localhost:3306/warehouse?characterEncoding=utf8&serverTimezone=UTC&useSSL=false";
+
 	private static Statement stmt;
 	private static Connection con;
 
@@ -28,14 +31,33 @@ public class DBUtil {
 
 	}
 
-	public static Connection getConn() {
-		if (con == null) {
-			try {
-				Class.forName("com.mysql.cj.jdbc.Driver");
-				con = DriverManager.getConnection(URL, USER, PWD);
-			} catch (Exception e) {
-				e.printStackTrace();
+	public static Connection getConn() throws IOException, ClassNotFoundException, SQLException {
+		try {
+
+			if (con == null) {
+				// 加载配置文件
+				Properties props = new Properties();
+				InputStream in = new FileInputStream("config/mysql.properties");
+				props.load(in);
+				in.close();
+
+				// 获取配置参数
+				String driver = props.getProperty("driver");
+				String url = props.getProperty("url");
+				String user = props.getProperty("username");
+				String password = props.getProperty("password");
+
+				// 加载驱动
+				Class.forName(driver);
+
+				// 建立数据库连接
+				con = DriverManager.getConnection(url, user, password);
 			}
+			return con;
+		} catch (Exception e) {
+			e.printStackTrace();
+			// TODO: handle exception
+
 		}
 		return con;
 	}
