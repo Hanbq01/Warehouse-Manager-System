@@ -18,7 +18,7 @@ import utils.DBUtil;
 /**
  * 查看所有货物的类
  * 
- * @author 韩炳琪 邸腾 冯宇
+ * @author HBQ
  *
  */
 public class AllGood extends JFrame {

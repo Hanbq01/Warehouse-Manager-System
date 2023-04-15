@@ -36,7 +36,7 @@ import view.Good_Update_Delete.MyModel;
 /**
  * 用户出货的界面
  * 
- * @author 韩炳琪 邸腾 冯宇
+ * @author HBQ
  *
  */
 public class UsergoodsOut extends JFrame {

@@ -27,7 +27,7 @@ import utils.DBUtil;
 /**
  * 管理员和用户查找货物的类
  * 
- * @author 韩炳琪 邸腾 冯宇
+ * @author HBQ
  *
  */
 public class GoodSearch extends JFrame {

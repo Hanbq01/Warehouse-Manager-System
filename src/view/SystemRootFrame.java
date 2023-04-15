@@ -21,7 +21,7 @@ import Date.PieTest;
 /**
  * 管理员登陆后的主界面
  * 
- * @author 韩炳琪 邸腾 冯宇
+ * @author HBQ
  *
  */
 public class SystemRootFrame extends JFrame {

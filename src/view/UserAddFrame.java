@@ -23,7 +23,7 @@ import utils.DBUtil;
 /**
  * 管理员增加用户的界面
  * 
- * @author 韩炳琪 邸腾 冯宇
+ * @author HBQ
  *
  */
 public class UserAddFrame extends JFrame {

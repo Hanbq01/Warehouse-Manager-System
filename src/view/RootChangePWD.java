@@ -23,7 +23,7 @@ import utils.DBUtil;
 /**
  * 管理员修改自己登录密码的界面
  * 
- * @author 韩炳琪 邸腾 冯宇
+ * @author HBQ
  *
  */
 public class RootChangePWD extends JFrame {

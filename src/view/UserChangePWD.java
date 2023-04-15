@@ -24,7 +24,7 @@ import view.Login;
 /**
  * 用户修改自己密码的界面
  * 
- * @author 韩炳琪 邸腾 冯宇
+ * @author HBQ
  *
  */
 public class UserChangePWD extends JFrame {

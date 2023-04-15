@@ -26,7 +26,7 @@ import utils.DBUtil;
 /**
  * 登录界面
  * 
- * @author 韩炳琪 邸腾 冯宇
+ * @author HBQ
  *
  */
 public class Login extends JFrame {

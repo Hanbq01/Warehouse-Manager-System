@@ -23,7 +23,7 @@ import utils.DBUtil;
 /**
  * 管理员添加货物的类
  * 
- * @author 韩炳琪 邸腾 冯宇
+ * @author HBQ
  *
  */
 public class GoodAddFrame extends JFrame {

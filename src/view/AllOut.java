@@ -18,7 +18,7 @@ import view.AllGood.MyModel;
 /**
  * 所有出货记录的类
  * 
- * @author 韩炳琪 邸腾 冯宇
+ * @author HBQ
  *
  */
 public class AllOut extends JFrame {

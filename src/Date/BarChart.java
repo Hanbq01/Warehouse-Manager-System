@@ -20,7 +20,7 @@ import utils.DBUtil;
 /**
  * 该类是获取借书信息（以条形图查看）
  * 
- * @author 韩炳琪 邸腾 冯宇
+ * @author HBQ
  *
  */
 public class BarChart {

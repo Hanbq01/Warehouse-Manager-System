@@ -11,12 +11,12 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
 
-import com.mysql.cj.callback.UsernameCallback;
 
 import utils.DBUtil;
 
 /**
- * @author 韩炳琪 冯宇 邸腾
+ * @author HBQ
+ * 连接数据库类
  *
  */
 public class DBUtil {

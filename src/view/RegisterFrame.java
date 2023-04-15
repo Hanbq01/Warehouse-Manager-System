@@ -21,7 +21,7 @@ import utils.DBUtil;
 /**
  * 用户的注册界面
  * 
- * @author 韩炳琪 邸腾 冯宇
+ * @author HBQ
  *
  */
 public class RegisterFrame extends JFrame {

@@ -27,7 +27,7 @@ import view.GoodSearch.MyModel;
 /**
  * 管理员查找用户的界面
  * 
- * @author 韩炳琪 邸腾 冯宇
+ * @author HBQ
  *
  */
 public class UserSearch extends JFrame {

@@ -18,7 +18,7 @@ import javax.swing.JPanel;
 /**
  * 用户登录后的主界面
  * 
- * @author 韩炳琪 邸腾 冯宇
+ * @author HBQ
  *
  */
 public class SystemUserFrame extends JFrame {
