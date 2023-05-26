@@ -26,9 +26,6 @@ import view.GoodSearch.MyModel;
 
 /**
  * 管理员查找用户的界面
- * 
- * @author HBQ
- *
  */
 public class UserSearch extends JFrame {
 	private JScrollPane jsp = new JScrollPane();
@@ -53,7 +50,7 @@ public class UserSearch extends JFrame {
 		// 使启动窗口位于屏幕的正中心
 		setLocation((thisScreen.width - thisFrame.width) / 2,
 				(thisScreen.height - thisFrame.height) / 2);
-		// 设置单击窗口的【关闭】按钮时将发生相应的动作
+		// 设置单击窗口的 关闭 按钮时将发生相应的动作
 		setDefaultCloseOperation(HIDE_ON_CLOSE);
 
 		setLocationRelativeTo(null);

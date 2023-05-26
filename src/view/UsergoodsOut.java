@@ -35,9 +35,6 @@ import view.Good_Update_Delete.MyModel;
 
 /**
  * 用户出货的界面
- * 
- * @author HBQ
- *
  */
 public class UsergoodsOut extends JFrame {
 	private JScrollPane jsp = new JScrollPane();
@@ -174,8 +171,7 @@ public class UsergoodsOut extends JFrame {
 		}
 
 		// 把标签和文本框加到panLab面板中
-		// panLab.add(Label);
-		// panLab.add(comboBox);
+
 		panLab.add(JB1);
 		panLab.add(JB2);
 		panLab.add(jTextField);
@@ -250,7 +246,6 @@ public class UsergoodsOut extends JFrame {
 		jTextField1.setEditable(false);
 		jTextField2.setEditable(false);
 		jTextField3.setEditable(false);
-//		jTextField4.setEditable(false);
 		jTextField5.setEditable(false);
 		jTextField6.setEditable(false);
 		jTextField7.setEditable(false);
@@ -364,10 +359,7 @@ public class UsergoodsOut extends JFrame {
 
 	
 	
-	/*
-	 * 限定只能输入数字的方法 来自https://blog.csdn.net/mmmmmk_/article/details/78608917
-	 * 本来可以键盘监听 但是过于僵硬
-	 */
+	
 	class NumberTextField extends PlainDocument {
 		public NumberTextField() {
 			super();

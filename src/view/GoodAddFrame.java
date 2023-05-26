@@ -22,9 +22,6 @@ import utils.DBUtil;
 
 /**
  * 管理员添加货物的类
- * 
- * @author HBQ
- *
  */
 public class GoodAddFrame extends JFrame {
 	private JPanel panBtn = new JPanel();
@@ -61,10 +58,6 @@ public class GoodAddFrame extends JFrame {
 		jLabel7.setForeground(new Color(255, 51, 51));
 		jLabel7.setText("添  加  货  物");
 
-		// jLabel1.setSize(100, 80);
-		// jLabel1.setLocation(50, 20);
-		// jLabel1.setHorizontalAlignment(JLabel.RIGHT);
-
 		jLabel2.setSize(100, 80);
 		jLabel2.setLocation(50, 5);
 		jLabel2.setHorizontalAlignment(JLabel.RIGHT);
@@ -85,14 +78,9 @@ public class GoodAddFrame extends JFrame {
 		jLabel6.setLocation(50, 160);
 		jLabel6.setHorizontalAlignment(JLabel.RIGHT);
 
-		// jTextField1.setSize(150, 20);
-		// jTextField1.setLocation(160,50);
 
 		jTextField2.setSize(150, 25);
 		jTextField2.setLocation(160, 33);
-
-		// jTextField3.setSize(150, 20);
-		// jTextField3.setLocation(160, 90);
 		
 
 		JComboBox comboBox2 = new JComboBox();
@@ -132,7 +120,6 @@ public class GoodAddFrame extends JFrame {
 		panBtn.add(jButton2);
 		panLab.setLayout(null);
 
-		// panLab.add(jLabel1);
 		panLab.add(jLabel2);
 		panLab.add(jLabel3);
 		panLab.add(jLabel4);
@@ -143,7 +130,6 @@ public class GoodAddFrame extends JFrame {
 		panLab.add(jTextField2);
 		panLab.add(comboBox1);
 		panLab.add(comboBox2);
-//		panLab.add(jTextField4);
 		panLab.add(jTextField5);
 		panLab.add(jTextField6);
 
@@ -155,12 +141,10 @@ public class GoodAddFrame extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				// String count2 = jTextField1.getText().trim();
-				// int count = Integer.parseInt(count2);
+
 				String goodsname = jTextField2.getText().trim();
 				String goodsplace = comboBox2.getSelectedItem().toString();
 				String goodstype = comboBox1.getSelectedItem().toString();
-//				String goodsplace = jTextField4.getText().trim();
 				String bookprice = jTextField5.getText().trim();
 				String goodsnum = jTextField6.getText().trim();
 
@@ -175,10 +159,8 @@ public class GoodAddFrame extends JFrame {
 					if (!rs.next()) {
 						stmt.executeUpdate(sql2);
 						JOptionPane.showMessageDialog(null, "添加成功。");
-//						dispose();
 					} else {
 						// 改成增加数量
-//						JOptionPane.showMessageDialog(null, "该已存在！");
 						stmt.executeUpdate("update Goods set GoodsNum=GoodsNum+'" + goodsnum + "';");
 						JOptionPane.showMessageDialog(null, "添加成功。");
 						jTextField2.setText("");
@@ -197,7 +179,6 @@ public class GoodAddFrame extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				// jTextField1.setText("");
 				jTextField2.setText("");
 				jTextField3.setText("");
 				jTextField4.setText("");

@@ -17,9 +17,6 @@ import utils.DBUtil;
 
 /**
  * 查看所有货物的类
- * 
- * @author HBQ
- *
  */
 public class AllGood extends JFrame {
 	private JScrollPane jsp = new JScrollPane();

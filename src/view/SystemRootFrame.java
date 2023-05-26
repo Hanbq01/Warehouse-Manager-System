@@ -20,9 +20,6 @@ import Date.PieTest;
 
 /**
  * 管理员登陆后的主界面
- * 
- * @author HBQ
- *
  */
 public class SystemRootFrame extends JFrame {
 	public static String USER_NAME;
@@ -34,7 +31,7 @@ public class SystemRootFrame extends JFrame {
 		JLabel imgLabel = new JLabel(img);
 		// 将背景图放在标签里。
 		this.getLayeredPane().add(imgLabel, new Integer(Integer.MIN_VALUE));
-		// 将背景标签添加到jfram的LayeredPane面板里。
+		// 将背景标签添加到jframe的LayeredPane面板里。
 		imgLabel.setBounds(0, 0, img.getIconWidth(), img.getIconHeight());
 		// 设置背景标签的位置
 		Container contain = this.getContentPane();
@@ -186,10 +183,4 @@ public class SystemRootFrame extends JFrame {
 		this.setJMenuBar(menuBar);
 	}
 
-	/*
-	 * 测试类
-	 */
-	public static void main(String[] args) {
-		new SystemRootFrame().setVisible(true);
-	}
 }

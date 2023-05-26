@@ -27,9 +27,6 @@ import utils.DBUtil;
 
 /**
  * 管理员修改和删除货物的类
- * 
- * @author HBQ
- *
  */
 public class Good_Update_Delete extends JFrame {
 	private JScrollPane jsp = new JScrollPane();
@@ -173,14 +170,14 @@ public class Good_Update_Delete extends JFrame {
 				int selRow = table.getSelectedRow();
 				id = table.getValueAt(selRow, 0).toString().trim();
 				name = table.getValueAt(selRow, 1).toString().trim();
-				type = table.getValueAt(selRow, 2).toString().trim();
-				writter = table.getValueAt(selRow, 3).toString().trim();
+				writter = table.getValueAt(selRow, 2).toString().trim();
+				type = table.getValueAt(selRow, 3).toString().trim();
 				price = table.getValueAt(selRow, 4).toString().trim();
 				num = table.getValueAt(selRow, 5).toString().trim();
 				jTextField1.setText(id);
 				jTextField2.setText(name);
-				jTextField3.setText(type);
-				jTextField4.setText(writter);
+				jTextField3.setText(writter);
+				jTextField4.setText(type);
 				jTextField5.setText(price);
 				jTextField6.setText(num);
 
@@ -232,16 +229,16 @@ public class Good_Update_Delete extends JFrame {
 				String id = jTextField1.getText().trim();
 				int i = Integer.parseInt(id);
 				String name = jTextField2.getText().trim();
-				String type = jTextField3.getText().trim();
-				String writer = jTextField4.getText().trim();
+				String type = jTextField4.getText().trim();
+				String writer = jTextField3.getText().trim();
 				String price = jTextField5.getText().trim();
 				double p = Double.parseDouble(price);
 				String num = jTextField6.getText().trim();
 				int n = Integer.parseInt(num);
 
 				Statement stmt = DBUtil.getStatement();
-				String sql = "update goods set GoodsName = '" + name + "',GoodsType = '" + type + "',GoodsPlace = '"
-						+ writer + "',Price = " + p + ",GoodsNum = "+n+" where GoodsId = " + i + ";";
+				String sql = "update goods set GoodsName = '" + name + "',GoodsPlace = '"
+						+ writer + "',GoodsType = '" + type + "',Price = " + p + ",GoodsNum = "+n+" where GoodsId = " + i + ";";
 				try {
 					stmt.executeUpdate(sql);
 					JOptionPane.showMessageDialog(null, "修改成功。");
@@ -255,10 +252,7 @@ public class Good_Update_Delete extends JFrame {
 				}
 			}
 		});
-
-		/*
-		 * 删除
-		 */
+		 //删除
 		btn2.addActionListener(new ActionListener() {
 
 			@Override

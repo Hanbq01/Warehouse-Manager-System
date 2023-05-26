@@ -23,9 +23,6 @@ import view.Login;
 
 /**
  * 用户修改自己密码的界面
- * 
- * @author HBQ
- *
  */
 public class UserChangePWD extends JFrame {
 	private JLabel jLabel1 = new JLabel("原  密  码：");

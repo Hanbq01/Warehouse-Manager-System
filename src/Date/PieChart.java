@@ -19,9 +19,6 @@ import utils.DBUtil;
 
 /**
  * 该类是获取借书信息（以饼形图查看）
- * 
- * @author HBQ
- *   
  */
 public class PieChart {
 	ChartPanel frame1;

@@ -25,9 +25,6 @@ import utils.DBUtil;
 
 /**
  * 登录界面
- * 
- * @author HBQ
- *
  */
 public class Login extends JFrame {
 	private JLabel labTitle = new JLabel("仓库信息管理系统登录");
@@ -45,7 +42,6 @@ public class Login extends JFrame {
 
 	public Login() {
 		setTitle("登录界面");
-		// setDefaultLookAndFeelDecorated(true);
 		this.setSize(500, 350);
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -59,7 +55,6 @@ public class Login extends JFrame {
 		labTitle.setFont(font);
 		labTitle.setHorizontalAlignment(JLabel.CENTER);
 		labTitle.setForeground(Color.RED);
-		// labTitle.setBorder(BorderFactory.createLineBorder(Color.BLACK));
 		labTitle.setBackground(Color.BLUE);
 		// 单选框
 		JRadioButton JB1 = new JRadioButton("管理员登录");
@@ -114,16 +109,6 @@ public class Login extends JFrame {
 					} catch (SQLException e1) {
 						e1.printStackTrace();
 					}
-					/*
-					 * UserDao UD = new UserDao(); UserBean uBean =
-					 * UD.findUser(name, pwd); if (uBean != null) {
-					 * JOptionPane.showConfirmDialog(LogIn.this, "登陆成功，欢迎进入!",
-					 * "登陆成功", JOptionPane.CLOSED_OPTION); dispose();
-					 * LibraryUserFrame LU = new LibraryUserFrame();
-					 * LU.setVisible(true); LibraryUserFrame.USER_NAME = name;
-					 * }else { JOptionPane.showMessageDialog(null, "账号或密码错误！");
-					 * }
-					 */
 
 				} else {
 					Statement stmt = DBUtil.getStatement();
@@ -195,7 +180,5 @@ public class Login extends JFrame {
 		((JPanel) contain).setOpaque(false);
 	}
 
-	public static void main(String[] args) {
-		new Login().setVisible(true);
-	}
+	
 }

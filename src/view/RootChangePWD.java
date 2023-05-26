@@ -22,9 +22,6 @@ import utils.DBUtil;
 
 /**
  * 管理员修改自己登录密码的界面
- * 
- * @author HBQ
- *
  */
 public class RootChangePWD extends JFrame {
 	private JLabel jLabel1 = new JLabel("原  密  码：");

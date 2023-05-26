@@ -11,14 +11,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
 
+import com.mysql.cj.callback.UsernameCallback;
 
 import utils.DBUtil;
 
-/**
- * @author HBQ
- * 连接数据库类
- *
- */
 public class DBUtil {
 
 	private static Statement stmt;
@@ -27,10 +23,7 @@ public class DBUtil {
 	private static DBUtil utils = null;
 	private static PreparedStatement pstmt; // 预编译语句对象
 
-	private DBUtil() {
-
-	}
-
+	
 	public static Connection getConn() throws IOException, ClassNotFoundException, SQLException {
 		try {
 
@@ -56,7 +49,6 @@ public class DBUtil {
 			return con;
 		} catch (Exception e) {
 			e.printStackTrace();
-			// TODO: handle exception
 
 		}
 		return con;

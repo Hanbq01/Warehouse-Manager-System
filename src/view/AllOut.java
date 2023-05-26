@@ -17,9 +17,6 @@ import view.AllGood.MyModel;
 
 /**
  * 所有出货记录的类
- * 
- * @author HBQ
- *
  */
 public class AllOut extends JFrame {
 	private JScrollPane jsp = new JScrollPane();

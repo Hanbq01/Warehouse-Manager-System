@@ -17,9 +17,6 @@ import javax.swing.JPanel;
 
 /**
  * 用户登录后的主界面
- * 
- * @author HBQ
- *
  */
 public class SystemUserFrame extends JFrame {
 	public static String USER_NAME;
@@ -124,10 +121,4 @@ public class SystemUserFrame extends JFrame {
 	}
 	
 	
-	/*
-	 * 测试类
-	 */
-	public static void main(String[] args) {
-		new SystemUserFrame().setVisible(true);
-	}
 }

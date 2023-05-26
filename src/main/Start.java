@@ -3,7 +3,7 @@ package main;
 import view.Login;
 
 /**
- * @author HBQ
+ *
  *
  *启动系统入口
  */

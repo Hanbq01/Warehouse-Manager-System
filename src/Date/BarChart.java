@@ -19,9 +19,6 @@ import utils.DBUtil;
 
 /**
  * 该类是获取借书信息（以条形图查看）
- * 
- * @author HBQ
- *
  */
 public class BarChart {
 	ChartPanel frame1;
@@ -33,12 +30,11 @@ public class BarChart {
 				"货物数量", // 数值轴的显示标签
 				dataset, // 数据集
 				PlotOrientation.VERTICAL, // 图表方向：水平、垂直
-				true, // 是否显示图例(对于简单的柱状图必须是false)
+				true, // 是否显示图例
 				false, // 是否生成工具
 				false // 是否生成URL链接
 		);
 
-		// 从这里开始
 		CategoryPlot plot = chart.getCategoryPlot();// 获取图表区域对象
 		CategoryAxis domainAxis = plot.getDomainAxis(); // 水平底部列表
 		domainAxis.setLabelFont(new Font("黑体", Font.BOLD, 14)); // 水平底部标题
@@ -48,8 +44,7 @@ public class BarChart {
 		chart.getLegend().setItemFont(new Font("黑体", Font.BOLD, 15));
 		chart.getTitle().setFont(new Font("宋体", Font.BOLD, 20));// 设置标题字体
 
-		frame1 = new ChartPanel(chart, true); // 这里也可以用chartFrame,可以直接生成一个独立的Frame
-
+		frame1 = new ChartPanel(chart, true); 
 	}
 
 	private static CategoryDataset getDataSet() {

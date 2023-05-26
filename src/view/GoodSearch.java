@@ -26,9 +26,6 @@ import utils.DBUtil;
 
 /**
  * 管理员和用户查找货物的类
- * 
- * @author HBQ
- *
  */
 public class GoodSearch extends JFrame {
 	private JScrollPane jsp = new JScrollPane();
@@ -103,7 +100,6 @@ public class GoodSearch extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 				// 获取comboBox下拉选择框的内容
 				String com = (String) comboBox.getSelectedItem();
-				// System.out.println(com);
 				if (com.equals("按货名查找")) {
 					String s = jTextField.getText().trim();
 					String sql = "select * from goods where GoodsName like '%" + s + "%';";

@@ -7,9 +7,6 @@ import javax.swing.JFrame;
 
 /**
  * 查看条形图的界面
- * 
- * @author HBQ
- *
  */
 public class BarTest extends JFrame {
 	public BarTest() {

@@ -7,9 +7,6 @@ import javax.swing.JFrame;
 
 /**
  * 查看饼形图的界面
- * 
- * @author HBQ
- *
  */
 public class PieTest extends JFrame {
 	public PieTest() {

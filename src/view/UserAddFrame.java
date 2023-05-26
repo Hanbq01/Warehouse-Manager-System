@@ -22,9 +22,6 @@ import utils.DBUtil;
 
 /**
  * 管理员增加用户的界面
- * 
- * @author HBQ
- *
  */
 public class UserAddFrame extends JFrame {
 	private JPanel panBtn = new JPanel();
